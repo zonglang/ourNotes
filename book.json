@@ -1,0 +1,25 @@
+{
+    "title": "我们的笔记~",
+    "root": "./src",
+    "plugins": [
+        "copy-code-button",
+        "alerts",
+        "summary",
+        "advanced-emoji",
+        "-lunr", "-search", "search-plus",
+        "-highlight","prism",
+        "splitter",
+        "expandable-chapters-small",
+        "simple-page-toc",
+        "anchors"
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "gitbookuse"
+        },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        }
+    }
+}
