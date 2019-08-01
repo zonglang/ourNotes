@@ -1,0 +1,361 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>css transition · 我们的笔记~</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../4-网络相关/DNS.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">1-概述</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2-css基础</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="css动画.html">
+            
+                <a href="css动画.html">
+            
+                    
+                    css transition
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3-js基础</li>
+        
+        
+    
+
+    
+        
+        <li class="header">4-网络相关</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../4-网络相关/DNS.html">
+            
+                <a href="../4-网络相关/DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5-Vue</li>
+        
+        
+    
+
+    
+        
+        <li class="header">6-React</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../6-React/React.html">
+            
+                <a href="../6-React/React.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">7-前端构建工具</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >css transition</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="css-transition"><a name="css-transition" class="plugin-anchor" href="#css-transition"><i class="fa fa-link" aria-hidden="true"></i></a>css transition</h3>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x6E21;&#x7684;&#x6982;&#x5FF5;</p>
+<ul>
+<li>&#x6307;&#x5B9A;&#x5C5E;&#x6027;</li>
+<li>&#x6307;&#x5B9A;&#x52A8;&#x753B;&#x65F6;&#x95F4;</li>
+<li>&#x6307;&#x5B9A;&#x5EF6;&#x65F6;&#x65F6;&#x95F4;</li>
+<li>&#x6307;&#x5B9A;&#x53D8;&#x5316;&#x66F2;&#x7EBF;
+&#x7F3A;&#x70B9;&#xFF1A;&#x9700;&#x8981;&#x65F6;&#x95F4;&#x89E6;&#x53D1;&#xFF0C;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x91CD;&#x590D;&#xFF0C;&#x6CA1;&#x6709;&#x4E2D;&#x95F4;&#x72B6;&#x6001;</li>
+</ul>
+<h3 id="css-animation"><a name="css-animation" class="plugin-anchor" href="#css-animation"><i class="fa fa-link" aria-hidden="true"></i></a>css animation</h3>
+<ul>
+<li>&#x6307;&#x5B9A;&#x5468;&#x671F;</li>
+<li>&#x6307;&#x5B9A;&#x52A8;&#x753B;&#x540D;&#x79F0;&#xFF08;@keyframes&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#xFF09;</li>
+</ul>
+<h3 id="css-transform"><a name="css-transform" class="plugin-anchor" href="#css-transform"><i class="fa fa-link" aria-hidden="true"></i></a>css transform</h3>
+<p>&#x65CB;&#x8F6C;&#x3001;&#x7F29;&#x653E;&#x3001;&#x503E;&#x659C;&#x3001;&#x5E73;&#x79FB;&#x7ED9;&#x5B9A;&#x5143;&#x7D20;</p>
+<p><strong>translate3d</strong>&#x3001;<strong>rotate3d</strong>&#x5F00;&#x542F;GPU&#x786C;&#x4EF6;&#x52A0;&#x901F;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../4-网络相关/DNS.html" class="navigation navigation-next " aria-label="Next page: DNS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"css transition","level":"2.1","depth":1,"next":{"title":"DNS","level":"4.1","depth":1,"path":"4-网络相关/DNS.md","ref":"4-网络相关/DNS.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","alerts","summary","advanced-emoji","-lunr","-search","search-plus","-highlight","prism","splitter","expandable-chapters-small","simple-page-toc","anchors","livereload"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":"gitbookuse"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"summary":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我们的笔记~","gitbook":"*"},"file":{"path":"2-css基础/css动画.md","mtime":"2019-08-01T16:31:58.844Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-01T17:00:03.088Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

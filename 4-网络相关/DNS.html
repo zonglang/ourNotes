@@ -1,0 +1,396 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DNS · 我们的笔记~</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../6-React/React.html" />
+    
+    
+    <link rel="prev" href="../2-css基础/css动画.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">1-概述</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2-css基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../2-css基础/css动画.html">
+            
+                <a href="../2-css基础/css动画.html">
+            
+                    
+                    css transition
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3-js基础</li>
+        
+        
+    
+
+    
+        
+        <li class="header">4-网络相关</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="DNS.html">
+            
+                <a href="DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5-Vue</li>
+        
+        
+    
+
+    
+        
+        <li class="header">6-React</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../6-React/React.html">
+            
+                <a href="../6-React/React.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">7-前端构建工具</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DNS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dns"><a name="dns" class="plugin-anchor" href="#dns"><i class="fa fa-link" aria-hidden="true"></i></a>DNS</h1>
+<ul>
+<li>&#x4F5C;&#x7528;&#xFF1A;&#x5B8C;&#x6210;&#x4E3B;&#x673A;&#x540D;&#x5230;IP&#x5730;&#x5740;&#x7684;&#x8F6C;&#x6362;</li>
+<li>&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;<ul>
+<li><strong>&#x9012;&#x5F52;&#x67E5;&#x8BE2;(</strong>&#x6536;&#x5230;&#x51C6;&#x786E;&#x7B54;&#x590D;)</li>
+<li><strong>&#x8FED;&#x4EE3;&#x67E5;&#x8BE2;</strong>(&#x6536;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5730;&#x5740;)</li>
+</ul>
+</li>
+<li>&#x4F7F;&#x7528;<strong>UDP</strong>&#xFF0C;53&#x7AEF;&#x53E3;</li>
+<li>DNS&#x52AB;&#x6301;&#xFF1A;&#x4FEE;&#x6539;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x7684;&#x7ED3;&#x679C;</li>
+<li>DNS&#x6C61;&#x67D3;&#xFF1A;&#x901A;&#x5F80;&#x56FD;&#x5916;&#x7684;&#x7F51;&#x5173;&#x4E0A;</li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token comment">// &#x56DE;&#x7B54;&#x6A21;&#x7248;</span>
+<span class="token number">1.</span> &#x8D77;&#x6E90;&#xFF1A;tcp<span class="token operator">/</span>ip&#x57FA;&#x4E8E;<span class="token constant">IP</span>&#x5730;&#x5740;&#xFF0C;&#x53EA;&#x80FD;&#x8BC6;&#x522B;&#x7F51;&#x7EDC;&#x901A;&#x8BAF;&#x65F6;&#x53EA;&#x80FD;&#x8BC6;&#x522B;<span class="token constant">IP</span>&#x5730;&#x5740;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;<span class="token constant">DNS</span>&#x89E3;&#x6790;
+<span class="token number">2.</span> <span class="token parameter">&#x8FC7;&#x7A0B;&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;</span> <span class="token operator">=&gt;</span> <span class="token parameter">&#x7CFB;&#x7EDF;&#x7F13;&#x5B58;</span> <span class="token operator">=&gt;</span> <span class="token parameter">&#x8DEF;&#x7531;&#x5668;&#x7F13;&#x5B58;</span> <span class="token operator">=&gt;</span> <span class="token parameter"><span class="token constant">ISP</span>&#x7684;<span class="token constant">DNS</span>&#x7F13;&#x5B58;</span> <span class="token operator">=&gt;</span> &#x4ECE;&#x6839;&#x57DF;&#x540D;&#x670D;&#x52A1;&#x5668;&#x5F00;&#x59CB;&#x67E5;&#x8BE2;
+<span class="token number">3.</span> &#x65B9;&#x5F0F;&#xFF1A; &#x9012;&#x5F52;&#x8FED;&#x4EE3;
+<span class="token number">4.</span> &#x4F5C;&#x7528;&#xFF1A;<span class="token constant">DNS</span>&#x52AB;&#x6301;&#x3001;&#x6C61;&#x67D3;
+<span class="token number">5.</span> &#x524D;&#x7AEF;&#x76F8;&#x5173;&#xFF1A;
+        <span class="token string">&apos;dns-prefetch&apos;</span> &#x9884;&#x89E3;&#x6790; meta&#x4FE1;&#x606F;&#x58F0;&#x660E;&#xFF0C;link&#x6807;&#x7B7E;&#x6307;&#x5B9A;&#x9884;&#x89E3;&#x6790;
+</code></pre>
+<h3 id="&#x57DF;&#x540D;&#x5206;&#x6563;&#x5904;&#x7406;"><a name="&#x57DF;&#x540D;&#x5206;&#x6563;&#x5904;&#x7406;" class="plugin-anchor" href="#&#x57DF;&#x540D;&#x5206;&#x6563;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57DF;&#x540D;&#x5206;&#x6563;&#x5904;&#x7406;</h3>
+<ul>
+<li>&#x89E3;&#x51B3;&#x6D4F;&#x89C8;&#x5668;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;&#x95EE;&#x9898;</li>
+<li>&#x89E3;&#x51B3;cookie&#x6C61;&#x67D3;&#x95EE;&#x9898;</li>
+</ul>
+<h3 id="&#x6D4F;&#x89C8;&#x5668;&#x9650;&#x5236;&#x540C;&#x57DF;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;"><a name="&#x6D4F;&#x89C8;&#x5668;&#x9650;&#x5236;&#x540C;&#x57DF;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;" class="plugin-anchor" href="#&#x6D4F;&#x89C8;&#x5668;&#x9650;&#x5236;&#x540C;&#x57DF;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4F;&#x89C8;&#x5668;&#x9650;&#x5236;&#x540C;&#x57DF;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;</h3>
+<h3 id="&#x9875;&#x9762;&#x6E32;&#x67D3;"><a name="&#x9875;&#x9762;&#x6E32;&#x67D3;" class="plugin-anchor" href="#&#x9875;&#x9762;&#x6E32;&#x67D3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9875;&#x9762;&#x6E32;&#x67D3;</h3>
+<p>DOM&#x6811;&#x7684;&#x6784;&#x5EFA;&#x662F;&#x4ECE;&#x63A5;&#x53D7;&#x5230;&#x6587;&#x6863;&#x5F00;&#x59CB;&#x7684;&#xFF0C;&#x5148;&#x5C06;&#x5B57;&#x8282;&#x8F6C;&#x5316;&#x4E3A;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x5B57;&#x7B26;&#x8F6C;&#x5316;&#x4E3A;&#x6807;&#x8BB0;&#xFF0C;&#x63A5;&#x7740;&#x6807;&#x8BB0;&#x6784;&#x5EFA;dom&#x6811;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x88AB;&#x5206;&#x4E3A;&#x6807;&#x8BB0;&#x5316;&#x548C;&#x6811;&#x6784;&#x5EFA;
+&#x800C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6E10;&#x8FDB;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x4E3A;&#x8FBE;&#x5230;&#x66F4;&#x597D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#xFF0C;&#x5448;&#x73B0;&#x5F15;&#x64CE;&#x4F1A;&#x529B;&#x6C42;&#x5C3D;&#x5FEB;&#x5C06;&#x5185;&#x5BB9;&#x663E;&#x793A;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;&#x5B83;&#x4E0D;&#x5FC5;&#x7B49;&#x5230;&#x6574;&#x4E2A; HTML &#x6587;&#x6863;&#x89E3;&#x6790;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x5F00;&#x59CB;&#x6784;&#x5EFA;&#x5448;&#x73B0;&#x6811;&#x548C;&#x8BBE;&#x7F6E;&#x5E03;&#x5C40;&#x3002;&#x5728;&#x4E0D;&#x65AD;&#x63A5;&#x6536;&#x548C;&#x5904;&#x7406;&#x6765;&#x81EA;&#x7F51;&#x7EDC;&#x7684;&#x5176;&#x4F59;&#x5185;&#x5BB9;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5448;&#x73B0;&#x5F15;&#x64CE;&#x4F1A;&#x5C06;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x89E3;&#x6790;&#x5E76;&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;</p>
+<ul>
+<li>css&#x52A0;&#x8F7D;  <a href="https://zhuanlan.zhihu.com/p/43282197" target="_blank">&#x77E5;&#x4E4E;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x9A8C;</a><ul>
+<li>&#x4E0D;&#x4F1A;&#x963B;&#x585E;DOM&#x6811;&#x7684;&#x89E3;&#x6790;.     <code>DOM&#x6811;&#x548C;CSSDOM&#x6811;&#x4E0D;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;</code></li>
+<li>&#x4F1A;&#x963B;&#x585E;DOM&#x6811;&#x7684;&#x6E32;&#x67D3;,         <code>render tree&#x7684;&#x6784;&#x5EFA;&#x9700;&#x8981;CSSDOM tree</code></li>
+<li>&#x4F1A;&#x963B;&#x585E;&#x540E;&#x9762;&#x7684;JS&#x6267;&#x884C;&#xFF0C;        <code>JS &#x6267;&#x884C;&#x53EF;&#x80FD;&#x8981;&#x83B7;&#x53D6;css&#x4FE1;&#x606F;</code></li>
+</ul>
+</li>
+<li>&#x4E09;&#x4E2A;&#x8FC7;&#x7A0B;&#x4F1A;&#x6709;&#x4EA4;&#x53C9;&#x5730;&#x8FDB;&#x884C;<ul>
+<li>&#x52A0;&#x8F7D;   ==&#x300B; &#x52A0;&#x8F7D;html&#xFF0C;css&#xFF0C;js</li>
+<li>&#x89E3;&#x6790;   ==&#x300B; &#x6784;&#x5EFA;DOM tree&#x3001;CSSDOM tree&#x3001;&#x6267;&#x884C;JS</li>
+<li>&#x6E32;&#x67D3;  ==&#x300B; &#x6E32;&#x67D3;render tree</li>
+</ul>
+</li>
+<li>&#x5C0F;&#x7ED3;<ul>
+<li>css&#x52A0;&#x8F7D;&#x548C;&#x89E3;&#x6790;&#xFF0C;&#x4F1A;&#x963B;&#x585E;JS&#xFF0C;&#x6E32;&#x67D3;</li>
+<li>js&#x52A0;&#x8F7D;&#x548C;&#x89E3;&#x6790;&#xFF0C;&#x4F1A;&#x963B;&#x585E;&#x6240;&#x6709;<ul>
+<li>async&#xFF0C;&#x52A0;&#x8F7D;&#x4E0D;&#x963B;&#x585E;&#xFF0C;&#x6267;&#x884C;&#x4F1A;&#x963B;&#x585E;&#x6240;&#x6709;&#xFF0C;==&#x5F02;&#x6B65;&#x6267;&#x884C;==</li>
+<li>defer&#xFF0C;&#x52A0;&#x8F7D;&#x548C;&#x6267;&#x884C;&#x90FD;&#x4E0D;&#x963B;&#x585E;&#xFF0C;&#x6267;&#x884C;&#x4F1A;&#x5728;&#x6240;&#x6709;&#x5143;&#x7D20;&#x89E3;&#x6790;&#x4E4B;&#x540E;&#x5B8C;&#x6210;&#xFF0C;==&#x540C;&#x6B65;&#x6267;&#x884C;==</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../2-css基础/css动画.html" class="navigation navigation-prev " aria-label="Previous page: css transition">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../6-React/React.html" class="navigation navigation-next " aria-label="Next page: React">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DNS","level":"4.1","depth":1,"next":{"title":"React","level":"6.1","depth":1,"path":"6-React/React.md","ref":"6-React/React.md","articles":[]},"previous":{"title":"css transition","level":"2.1","depth":1,"path":"2-css基础/css动画.md","ref":"2-css基础/css动画.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","alerts","summary","advanced-emoji","-lunr","-search","search-plus","-highlight","prism","splitter","expandable-chapters-small","simple-page-toc","anchors","livereload"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":"gitbookuse"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"summary":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我们的笔记~","gitbook":"*"},"file":{"path":"4-网络相关/DNS.md","mtime":"2019-08-01T16:28:48.167Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-01T17:00:03.088Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
