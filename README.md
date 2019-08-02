@@ -52,13 +52,9 @@
 
 ### 如何协作
 
-我们只维护一个主分支master，所以为了使版本管理有序，请在push之前进行以下操作：
+我们只维护一个主分支master，所以为了使版本管理有序，请在push之前进行以下[变基操作](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA)
 
 ```
 git pull --rebase
 ```
-
-[变基操作]([https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA](https://git-scm.com/book/zh/v2/Git-分支-变基))
-
-
 
